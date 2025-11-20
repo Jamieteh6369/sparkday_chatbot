@@ -3,7 +3,8 @@ import { Send, Bot, User, Loader } from 'lucide-react';
 
 // --- Gemini API Configuration ---
 // Note: API_KEY is left empty, as the Canvas environment automatically provides the key at runtime.
-const API_KEY = "AIzaSyASFYyBxVTCXeuIMM6C0Ujve5EUqM8frIs"; 
+// const API_KEY = "AIzaSyASFYyBxVTCXeuIMM6C0Ujve5EUqM8frIs";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const MODEL_NAME = 'gemini-2.5-flash-preview-09-2025';
 
 // System Instruction to define the AI's persona
